@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athletics Baseball Scratch Page</title>
+    <!-- 
+      FIXED: Changed the CSS path to a relative path, which is generally more robust for web deployment.
+      "C:\Users\alvey\OneDrive\Desktop\IS WEB DEV\css\aviators_style.css" only works on your local machine.
+      Assuming your CSS file is in a folder named 'css' relative to this HTML file:
+    -->
+    <link rel="stylesheet" href="css/aviators_style.css"> 
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        ATHLETICS BASEBALL
+    </div>
+
+    <!-- Left Menu -->
+    <div class="leftmenu">
+        <a href="C:\Users\alvey\OneDrive\Desktop\IS WEB DEV\index.html">Main Page</a>
+        <a href="#team-info">Team Info</a>
+        <a href="#history">History</a>
+        <a href="#video">Video</a>
+        <a href="#tableau">Stats</a>
+    </div>
+
+    <!-- Right Menu -->
+    <div class="rightmenu">
+        <a href="#top">Back to Top</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="mainbody" id="top">
+        <!-- Team Info Section -->
+        <div id="team-info">
+            <h2>Team Information</h2>
+            <p>The Oakland Athletics (A’s) are a professional Major League Baseball team with a storied history, 
+               originally founded in 1901 as the Philadelphia Athletics. Known for their iconic green and gold colors 
+               and innovative strategies, the team has won multiple World Series championships. The A’s currently play 
+               in Oakland but are planning a move to Las Vegas, where they will play in a new state-of-the-art stadium, 
+               continuing their legacy and fan experience in a new city.</p>
+
+            <!-- Ordered list with embedded unordered list -->
+            <ol>
+                <li>General Info:
+                    <ul>
+                        <li>Location: Oakland, California (moving to Las Vegas, Nevada)</li>
+                        <li>League: Major League Baseball (MLB)</li>
+                        <li>Team Colors: Green, Gold, White</li>
+                    </ul>
+                </li>
+                <li>Stadium:
+                    <ul>
+                        <li>Current: RingCentral Coliseum, Oakland</li>
+                        <li>Future: New Stadium in Las Vegas (under construction)</li>
+                        <li>Capacity: Approx. 30,000 (future stadium)</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <!-- Team Logo -->
+            <div class="headshot-container">
+                <!-- Assuming the image is in an 'images' folder relative to the HTML file -->
+                <img src="images/logo.png" alt="Athletics Logo" class="headshot">
+            </div>
+        </div>
+
+        <!-- Team History Section -->
+        <div id="history">
+            <h2>Team History</h2>
+            <p>
+                The Oakland Athletics were originally founded in 1901 as the <strong>Philadelphia Athletics</strong>, 
+                one of the American League's charter teams. They moved to Kansas City in 1955 and became the 
+                <strong>Kansas City Athletics</strong>, before relocating to Oakland in 1968. Over the years, 
+                the A's have won <strong>9 World Series championships</strong> and have been known for their 
+                innovative strategies, including the use of analytics in player development. The team has a rich 
+                legacy of developing talent and cultivating a strong fan base in the Bay Area. Currently, the Athletics 
+                are preparing to <strong>move to Las Vegas</strong> where a new state-of-the-art stadium will continue 
+                the team’s storied tradition in a new city.
+            </p>
+        </div>
+
+        <!-- YouTube Video Section -->
+        <div id="video">
+            <h2>New Las Vegas Stadium</h2>
+            <iframe width="1047" height="589" src="https://www.youtube.com/embed/47kIYRzba0o" title="Inside the Las Vegas MLB Stadium Replacing the Oakland Coliseum" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- Tableau Section -->
+        <div id="tableau">
+            <h2>2025 Batting Stats Visualization</h2>
+            <p>Interactive Tableau graph of Athletics statistics:</p>
+
+            <div class='tableauPlaceholder' id='viz1765828048237' style='width: 100%; height: 600px;'>
+                <object class='tableauViz' width='100%' height='600' style='display:none;'>
+                    <param name='host_url' value='https://public.tableau.com/' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='HitsByPosition/Sheet1' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https://public.tableau.com/static/images/Hi/HitsByPosition/Sheet1/1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object>
+            </div>
+
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1765828048237');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if (vizElement) {
+                    vizElement.style.display = 'block';
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = '600px';
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    divElement.appendChild(scriptElement);
+                }
+            </script>
+        </div>
+    </div> <!-- Added missing closing div for .mainbody -->
+
+</body>
+</html>

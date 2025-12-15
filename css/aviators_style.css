@@ -1,0 +1,170 @@
+/* ---------- Body ---------- */
+body {
+    background-color: #e6f0dc; /* light green-ish background for Athletics theme */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Common absolute container */
+.common {
+    border: 2px solid white;
+    position: absolute;
+}
+
+/* ---------- Header ---------- */
+.header {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    height: 100px;
+    background-color: #004830; /* dark green */
+    color: #FFB81C; /* gold text */
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 2;
+    border-bottom: 2px solid #003320; /* darker green border */
+}
+
+/* ---------- Left Menu ---------- */
+.leftmenu {
+    position: absolute;
+    top: 114px;
+    left: 5px;
+    width: 120px;
+    bottom: 39px;
+    z-index: 1;
+    padding-top: 40px;
+    background-color: #DFF0D8; /* light green menu */
+    border-right: 1px solid #A4C18E; /* medium green border */
+}
+
+.leftmenu a {
+    display: block;
+    margin-bottom: 10px;
+    color: #004830; /* dark green text */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.leftmenu a:hover {
+    color: #6BBE48; /* lighter green hover */
+}
+
+/* ---------- Right Menu ---------- */
+.rightmenu {
+    position: absolute;
+    top: 114px;
+    right: 5px;
+    width: 120px;
+    bottom: 39px;
+    background-color: #DFF0D8; /* light green */
+    padding-top: 40px;
+    z-index: 1;
+    border-left: 1px solid #A4C18E;
+}
+
+.rightmenu a {
+    display: block;
+    margin-bottom: 10px;
+    color: #004830;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.rightmenu a:hover {
+    color: #6BBE48;
+}
+
+/* ---------- Main Body ---------- */
+.mainbody {
+    position: absolute;
+    top: 114px;
+    left: 130px;
+    right: 130px;
+    bottom: 39px;
+    background-color: #FFFFFF; /* white content area */
+    padding: 20px;
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #A4C18E; /* subtle green shadow */
+}
+
+/* Headshot container for logo/home */
+.headshot-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.headshot {
+    height: 250px;
+    width: auto;
+}
+
+/* About Me Photos Container */
+.photos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Full-width photos */
+.about-photo-full {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #004830;
+    box-sizing: border-box;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    height: 25px;
+    background-color: #004830; /* dark green */
+    color: #FFB81C; /* gold text */
+    text-align: center;
+    line-height: 25px;
+    z-index: 2;
+    border-top: 2px solid #003320;
+}
+
+/* ---------- Headings ---------- */
+h1, h2, h3, h4 {
+    color: #004830; /* dark green headings */
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+/* ---------- Links ---------- */
+a {
+    color: #6BBE48; /* medium green links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #004830; /* dark green hover */
+}
+
+/* ---------- Back to Top link ---------- */
+a[href="#top"] {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #004830;
+    font-weight: bold;
+}
+
+a[href="#top"]:hover {
+    color: #6BBE48;
+}
